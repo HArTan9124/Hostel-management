@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:backgroundTint="#CFFFFFFF">
+
+    <TextView
+        android:id="@+id/tv_student_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:text="Student Name"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_attendance"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:text="P" />
+
+        <RadioButton
+            android:id="@+id/rb_absent"
+            android:layout_width="wrap_content"
+            android:buttonTint="@color/black"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:text="A" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentLanding"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_marginTop="20dp">
+
+    <include layout="@layout/appbar_staff"/>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:id="@+id/navview"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/staff_menu"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

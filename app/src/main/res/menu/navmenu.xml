@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Edit"
+        android:title="Medical Services" />
+    <item
+        android:id="@+id/Profile"
+        android:title="Emergency Contacts"/>
+    <item
+        android:id="@+id/raise_comp"
+        android:title="Raise Complaints" />
+    <item
+        android:id="@+id/menusee"
+        android:title="Mess menu"/>
+
+</menu>

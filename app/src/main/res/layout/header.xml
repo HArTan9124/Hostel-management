@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/appbar">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieViewheader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:lottie_rawRes="@raw/hostel"
+        android:layout_weight="0.5"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginBottom="16dp"
+        android:clipToOutline="true" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hostel Management"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:textColor="@color/dekhlo"/>
+
+
+
+
+
+</LinearLayout>

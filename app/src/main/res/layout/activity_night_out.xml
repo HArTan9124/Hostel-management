@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NightOut"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Night Out"
+        android:textSize="54sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieViewheader"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:lottie_rawRes="@raw/nightout"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginBottom="16dp"
+        android:clipToOutline="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="@color/black"
+                android:layout_marginBottom="30dp"
+                app:boxStrokeColor="@color/black"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/StudentName"
+                    android:layout_width="match_parent"
+                    android:layout_margin="30dp"
+                    android:textColor="@color/black"
+                    android:background="#CFFFFFFF"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- UID Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UID"
+                android:textColorHint="@color/black"
+                android:layout_marginBottom="30dp"
+                app:boxStrokeColor="@color/black"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/NpUID"
+                    android:layout_width="match_parent"
+                    android:layout_margin="30dp"
+                    android:background="#CFFFFFFF"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Reason Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reason"
+                android:layout_marginBottom="30dp"
+                app:boxStrokeColor="@color/black"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Reason"
+                    android:layout_width="match_parent"
+                    android:layout_margin="30dp"
+                    android:background="#CFFFFFFF"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Date of Night Pass Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Night Pass"
+                android:layout_marginBottom="30dp"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateofnp"
+                    android:layout_width="match_parent"
+                    android:layout_margin="30dp"
+                    android:textColor="@color/black"
+                    android:background="#CFFFFFFF"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:inputType="date"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Returning Date Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Returning Date"
+                android:layout_marginBottom="30dp"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusBottomEnd="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/returnDate"
+                    android:layout_width="match_parent"
+                    android:layout_margin="30dp"
+                    android:textColor="@color/black"
+                    android:background="#CFFFFFFF"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:inputType="date"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Submit Button -->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nightoutsub"
+        android:text="Submit"
+        android:layout_gravity="center" />
+
+</LinearLayout>
